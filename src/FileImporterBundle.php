@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Cooolinho\Bundle\FileImporterBundle;
 
-use Cooolinho\Bundle\FileImporterBundle\DependencyInjection\CooolinhoFileImporterExtension;
+use Cooolinho\Bundle\FileImporterBundle\DependencyInjection\FileImporterExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class CooolinhoFileImporterBundle extends Bundle
+class FileImporterBundle extends Bundle
 {
     public const CONFIGURATION_KEY = 'cooolinho_csv_importer';
 
@@ -21,10 +21,10 @@ class CooolinhoFileImporterBundle extends Bundle
     }
 
     /**
-     * @return CooolinhoFileImporterExtension
+     * @return FileImporterExtension
      */
-    public function getContainerExtension(): CooolinhoFileImporterExtension
+    public function getContainerExtension(): FileImporterExtension
     {
-        return new CooolinhoFileImporterExtension();
+        return new FileImporterExtension();
     }
 }

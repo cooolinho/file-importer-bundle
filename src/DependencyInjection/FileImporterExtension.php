@@ -2,13 +2,13 @@
 
 namespace Cooolinho\Bundle\FileImporterBundle\DependencyInjection;
 
-use Cooolinho\Bundle\FileImporterBundle\CooolinhoFileImporterBundle;
+use Cooolinho\Bundle\FileImporterBundle\FileImporterBundle;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class CooolinhoFileImporterExtension extends Extension
+class FileImporterExtension extends Extension
 {
     /**
      * @param array $configs
@@ -23,6 +23,6 @@ class CooolinhoFileImporterExtension extends Extension
             $container,
             $locator
         );
-        $loader->load(CooolinhoFileImporterBundle::CONFIGURATION_KEY . '.yaml');
+        $loader->load(FileImporterBundle::CONFIGURATION_KEY . '.yaml');
     }
 }
