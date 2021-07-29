@@ -1,7 +1,7 @@
 {
   "name": "cooolinho/symfony-file-importer-bundle",
   "license": "GPL-2.0-only",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "type": "symfony-bundle",
   "description": "test reusable bundle",
   "minimum-stability": "dev",
